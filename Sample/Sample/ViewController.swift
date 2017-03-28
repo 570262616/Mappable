@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var sexLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let person = TRPerson(json: ["name": "Arror", "age": 26, "sex": 1])
+        
+        self.nameLabel.text = person?.name
+        self.ageLabel.text = {
+            if let age = person?.age {
+                return "\(age) 岁"
+            } else {
+                return "-"
+            }
+        }()
+        self.sexLabel.text = person?.sex?.sexString
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension TRSex {
+    var sexString: String {
+        switch self {
+        case .female:
+            return "女生"
+        case .male:
+            return "男生"
+        }
     }
-
-
 }
 
