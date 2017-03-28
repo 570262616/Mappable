@@ -1,1 +1,4 @@
 # SwiftJSONMapping
+
+# Installation
+    pod 'SwiftJSONMapping'
