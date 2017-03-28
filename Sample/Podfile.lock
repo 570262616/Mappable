@@ -1,0 +1,16 @@
+PODS:
+  - SwiftJSONMapping (0.0.1)
+
+DEPENDENCIES:
+  - SwiftJSONMapping (from `../../SwiftJSONMapping`)
+
+EXTERNAL SOURCES:
+  SwiftJSONMapping:
+    :path: ../../SwiftJSONMapping
+
+SPEC CHECKSUMS:
+  SwiftJSONMapping: 9f3f529d23900666861cb3d67890c81a2bb013c0
+
+PODFILE CHECKSUM: 26300660df2cc586077b8dd68fab507c04dbe926
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,6 @@
+framework module SwiftJSONMapping {
+  umbrella header "SwiftJSONMapping-umbrella.h"
+
+  export *
+  module * { export * }
+}
