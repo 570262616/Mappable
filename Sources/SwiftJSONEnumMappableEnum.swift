@@ -1,6 +1,6 @@
 //
-//  Enum.swift
-//  Snoopy
+//  SwiftJSONEnumMappableEnum.swift
+//  Sample
 //
 //  Created by 马强 on 2016/12/31.
 //  Copyright © 2016年 马强. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Enum: Base {
+public protocol SwiftJSONEnumMappable: SwiftJSONMappable {
     
     associatedtype E
     
@@ -17,7 +17,7 @@ public protocol Enum: Base {
     var rawValue: E { get }
 }
 
-extension Enum {
+extension SwiftJSONEnumMappable {
     
     public init?(json: Any?) {
         guard let raw = json as? E else { return nil }

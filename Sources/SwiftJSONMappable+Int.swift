@@ -1,6 +1,6 @@
 //
-//  Base+Int.swift
-//  Snoopy
+//  SwiftJSONMappable+Int.swift
+//  Sample
 //
 //  Created by 马强 on 2016/12/31.
 //  Copyright © 2016年 马强. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Int8: Base {
+extension Int8: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -18,7 +18,7 @@ extension Int8: Base {
     public var json: Any { return self }
 }
 
-extension Int16: Base {
+extension Int16: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -28,7 +28,7 @@ extension Int16: Base {
     public var json: Any { return self }
 }
 
-extension Int32: Base {
+extension Int32: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -38,7 +38,7 @@ extension Int32: Base {
     public var json: Any { return self }
 }
 
-extension Int: Base {
+extension Int: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -48,7 +48,7 @@ extension Int: Base {
     public var json: Any { return self }
 }
 
-extension Int64: Base {
+extension Int64: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -58,7 +58,7 @@ extension Int64: Base {
     public var json: Any { return self }
 }
 
-extension UInt8: Base {
+extension UInt8: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -68,7 +68,7 @@ extension UInt8: Base {
     public var json: Any { return self }
 }
 
-extension UInt16: Base {
+extension UInt16: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -78,7 +78,7 @@ extension UInt16: Base {
     public var json: Any { return self }
 }
 
-extension UInt32: Base {
+extension UInt32: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -88,7 +88,7 @@ extension UInt32: Base {
     public var json: Any { return self }
 }
 
-extension UInt: Base {
+extension UInt: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }
@@ -98,7 +98,7 @@ extension UInt: Base {
     public var json: Any { return self }
 }
 
-extension UInt64: Base {
+extension UInt64: SwiftJSONMappable {
     
     public init?(json: Any?) {
         guard let number = json as? NSNumber else { return nil }

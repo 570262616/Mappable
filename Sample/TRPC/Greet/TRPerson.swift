@@ -7,7 +7,7 @@
 import Foundation
 import SwiftJSONMapping
 
-public struct TRPerson: Base {
+public struct TRPerson: SwiftJSONMappable {
     
     public var name: String?
     public var age: Int?
