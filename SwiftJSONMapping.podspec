@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SwiftJSONMapping'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.license = 'MIT'
   s.summary = 'Swift JSON Mapping.'
   s.homepage = 'https://github.com/Arror/SwiftJSONMapping'
