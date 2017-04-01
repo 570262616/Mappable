@@ -15,7 +15,7 @@
 		46E7A8AE3BC6DECF436523FE4C0F1B9F /* SwiftJSONMappable+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B8E9D708BD9C58E2067C950137BBC /* SwiftJSONMappable+Bool.swift */; };
 		6024B53A86E5E3A5553301F9B70A5B0B /* Pods-Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 630DD76D417453483F37DBAE838D5518 /* Pods-Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71BB7A631A512027C13CAF4BB349A6F6 /* Pods-Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF50723EE695E440CDA214119EF2C70 /* Pods-Sample-dummy.m */; };
-		762649C312FDD6BEB6E558507757874E /* SwiftJSONEnumMappableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C57B0F6F04C83322C96F30F5D2A17D /* SwiftJSONEnumMappableEnum.swift */; };
+		762649C312FDD6BEB6E558507757874E /* SwiftJSONEnumMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C57B0F6F04C83322C96F30F5D2A17D /* SwiftJSONEnumMappable.swift */; };
 		925FC8503267827AFE1D800638DBD5DF /* SwiftJSONMappable+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC040BDC3693B7BB8A6BC6C231160C /* SwiftJSONMappable+Array.swift */; };
 		9FBF129B528A1DA1D39D440CFAB64874 /* SwiftJSONMapping-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D40538CFCC059C10677E7883E71F18EA /* SwiftJSONMapping-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C11693C3AD40A3702B38296E60526DF4 /* SwiftJSONMappable+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403955D40F3B87F74CE2ECE430984B4 /* SwiftJSONMappable+Double.swift */; };
@@ -38,7 +38,7 @@
 		009135403CA8DFE4FA6F87FE70F9831B /* SwiftJSONMapping.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftJSONMapping.xcconfig; sourceTree = "<group>"; };
 		00DDFDA19B9F64F86C3A3CE7DA840C75 /* SwiftJSONMappable+Float.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SwiftJSONMappable+Float.swift"; sourceTree = "<group>"; };
 		161FD1626938094EEC6BF57530EDB6DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22C57B0F6F04C83322C96F30F5D2A17D /* SwiftJSONEnumMappableEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftJSONEnumMappableEnum.swift; sourceTree = "<group>"; };
+		22C57B0F6F04C83322C96F30F5D2A17D /* SwiftJSONEnumMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftJSONEnumMappable.swift; sourceTree = "<group>"; };
 		2646F5720DEFED98B4F7E7691247A3B7 /* SwiftJSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftJSONMappable.swift; sourceTree = "<group>"; };
 		2FDF78216A41DB691C5960FEE69EB9FD /* Pods-Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-resources.sh"; sourceTree = "<group>"; };
 		3AE375A74D27FC41E7BB6C006DFC76A6 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				00DDFDA19B9F64F86C3A3CE7DA840C75 /* SwiftJSONMappable+Float.swift */,
 				9804A67F02477A8DCA45DF93AFD83D97 /* SwiftJSONMappable+Int.swift */,
 				6463D82C43AEC4D8E1BE7221F32E0D04 /* SwiftJSONMappable+String.swift */,
-				22C57B0F6F04C83322C96F30F5D2A17D /* SwiftJSONEnumMappableEnum.swift */,
+				22C57B0F6F04C83322C96F30F5D2A17D /* SwiftJSONEnumMappable.swift */,
 				558710B85B56D016A013B4ED07E3830B /* SwiftJSONMappable+Operator.swift */,
 			);
 			path = Sources;
@@ -300,7 +300,7 @@
 				2AD00C44509B77ADC260A49A5475BCCF /* SwiftJSONMappable+Int.swift in Sources */,
 				33CA1A1AB04949570E6ABB2B45DC8184 /* SwiftJSONMappable+String.swift in Sources */,
 				DC65D0A259D7B38393FB183B0FEF8F5E /* SwiftJSONMappable.swift in Sources */,
-				762649C312FDD6BEB6E558507757874E /* SwiftJSONEnumMappableEnum.swift in Sources */,
+				762649C312FDD6BEB6E558507757874E /* SwiftJSONEnumMappable.swift in Sources */,
 				C821A9DC01D3C4E2819343B6ED3B97F1 /* SwiftJSONMappable+Operator.swift in Sources */,
 				2EA21052A0A2EB8607837FD3F09B5FA1 /* SwiftJSONMapping-dummy.m in Sources */,
 			);
