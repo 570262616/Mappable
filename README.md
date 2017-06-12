@@ -1,5 +1,7 @@
 # SwiftJSONMapping
 
+# Deprecate in Swift4.
+
 # Installation
     pod 'SwiftJSONMapping'
 
