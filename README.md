@@ -1,16 +1,14 @@
 # SwiftJSONMapping
 
-# Deprecate in Swift4.
-
 # Installation
     pod 'SwiftJSONMapping'
 
 # Usage
 ```swift
 import Foundation
-import SwiftJSONMapping
+import Mappable
 
-public enum TRSex: Int, SwiftJSONEnumMappable {
+public enum TRSex: Int, EnumMappable {
 
     public typealias E = Int
     
@@ -18,19 +16,21 @@ public enum TRSex: Int, SwiftJSONEnumMappable {
     case male = 1 
 }
 
-public struct TRPerson: SwiftJSONMappable {
+public struct TRPerson: Mappable {
     
     public var name: String?
     public var age: Int?
     public var sex: TRSex?
+    
+    public init() {}
 
-    public init?(json: Any?) {
+    public init?(any: Any?) {
         
-        guard let dict = json as? [String: Any] else { return nil }
+        guard let wrapper = SubscriptWrapper(any) else { return nil }
         
-        name = dict <- "name"
-        age = dict <- "age"
-        sex = dict <- "sex"
+        name = wrapper["name"]
+        age = wrapper["age"]
+        sex = wrapper["sex"]
     }
     
     public var json: Any {
