@@ -1,7 +1,7 @@
 # SwiftJSONMapping
 
 # Installation
-    pod 'SwiftJSONMapping'
+    pod 'Mappable'
 
 # Usage
 ```swift
