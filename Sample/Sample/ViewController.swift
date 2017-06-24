@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let p = TRPerson()
+        
+        print(p)
+        
         let person = TRPerson(any: ["name": "Arror", "age": 26, "sex": 1, "sexs": [1, 2, 1, 2, 1, 2]])
         
         self.nameLabel.text = person?.name

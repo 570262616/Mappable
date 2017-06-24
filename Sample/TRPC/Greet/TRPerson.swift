@@ -12,10 +12,12 @@ public struct TRPerson: Mappable {
     public var name: String?
     public var age: Int?
     public var sex: TRSex?
+    
+    public init() {}
 
     public init?(any: Any?) {
         
-        guard let json = SwiftJSON(any) else { return }
+        guard let json = SwiftJSON(any) else { return nil }
         
         name = json["name"]
         age = json["age"]
