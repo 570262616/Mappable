@@ -5,7 +5,7 @@
 //
 
 import Foundation
-import SwiftJSONMapping
+import Mappable
 
 public enum TRSex: Int, EnumMappable {
 
