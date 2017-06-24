@@ -28,13 +28,7 @@ class ViewController: UIViewController {
             }
         }()
         
-        let sexs = person?.sexs?.map({ sex -> String in
-            
-            return sex.sexString
-            
-        }) ?? []
-        
-        self.sexLabel.text = (person?.sex?.sexString ?? "") + "< - >" + sexs.joined(separator: "-")
+        self.sexLabel.text = person?.sex?.sexString
     }
 }
 

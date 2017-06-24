@@ -12,7 +12,6 @@ public struct TRPerson: Mappable {
     public var name: String?
     public var age: Int?
     public var sex: TRSex?
-    public var sexs: [TRSex]?
 
     public init?(any: Any?) {
         
@@ -21,7 +20,6 @@ public struct TRPerson: Mappable {
         name = json["name"]
         age = json["age"]
         sex = json["sex"]
-        sexs = json["sexs"]
     }
     
     public var json: Any {
