@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let person = TRPerson(json: ["name": "Arror", "age": 26, "sex": 1])
+        let person = TRPerson(any: ["name": "Arror", "age": 26, "sex": 1, "sexs": [1, 2, 1, 2, 1, 2]])
         
         self.nameLabel.text = person?.name
         self.ageLabel.text = {
@@ -27,11 +27,19 @@ class ViewController: UIViewController {
                 return "-"
             }
         }()
-        self.sexLabel.text = person?.sex?.sexString
+        
+        let sexs = person?.sexs?.map({ sex -> String in
+            
+            return sex.sexString
+            
+        }) ?? []
+        
+        self.sexLabel.text = (person?.sex?.sexString ?? "") + "< - >" + sexs.joined(separator: "-")
     }
 }
 
 extension TRSex {
+    
     var sexString: String {
         switch self {
         case .female:

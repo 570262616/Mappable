@@ -7,19 +7,21 @@
 import Foundation
 import SwiftJSONMapping
 
-public struct TRPerson: SwiftJSONMappable {
+public struct TRPerson: Mappable {
     
     public var name: String?
     public var age: Int?
     public var sex: TRSex?
+    public var sexs: [TRSex]?
 
-    public init?(json: Any?) {
+    public init?(any: Any?) {
         
-        guard let dict = json as? [String: Any] else { return nil }
+        guard let json = SwiftJSON(any) else { return }
         
-        name = dict <- "name"
-        age = dict <- "age"
-        sex = dict <- "sex"
+        name = json["name"]
+        age = json["age"]
+        sex = json["sex"]
+        sexs = json["sexs"]
     }
     
     public var json: Any {

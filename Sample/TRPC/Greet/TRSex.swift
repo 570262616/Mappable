@@ -7,7 +7,7 @@
 import Foundation
 import SwiftJSONMapping
 
-public enum TRSex: Int, SwiftJSONEnumMappable {
+public enum TRSex: Int, EnumMappable {
 
     public typealias E = Int
     
