@@ -170,5 +170,12 @@ extension String: Mappable {
 
 extension Array where Element: Mappable {
     
+    public init?(any: Any?) {
+        
+        guard let elements = any as? [Any] else { return nil }
+        
+        self = elements.flatMap { Element(any: $0) }
+    }
+    
     public var json: Any { return self.map { $0.json } }
 }

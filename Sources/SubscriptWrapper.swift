@@ -18,8 +18,6 @@ public struct SubscriptWrapper {
     
     public subscript<T: Collection>(_ key: String) -> T? where T.Element: Mappable {
         
-        guard let elements = self.storage[key] as? [Any] else { return nil }
-        
-        return elements.flatMap { T.Element(any: $0) } as? T
+        return Array<T.Element>(any: self.storage[key]) as? T
     }
 }
