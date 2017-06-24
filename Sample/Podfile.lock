@@ -2,15 +2,15 @@ PODS:
   - Mappable (0.0.2)
 
 DEPENDENCIES:
-  - Mappable (from `../../SwiftJSONMapping`)
+  - Mappable (from `../../Mappable`)
 
 EXTERNAL SOURCES:
   Mappable:
-    :path: ../../SwiftJSONMapping
+    :path: ../../Mappable
 
 SPEC CHECKSUMS:
   Mappable: d8107ec2b8f45fc70a1ba111722e4a89b69a66d7
 
-PODFILE CHECKSUM: 9615484783e12fbec24b50d292c0df50d06a9b6d
+PODFILE CHECKSUM: cd837871e630a2a1189157af1fa09e08dac5e5ec
 
 COCOAPODS: 1.2.1
