@@ -17,11 +17,11 @@ public struct TRPerson: Mappable {
 
     public init?(any: Any?) {
         
-        guard let json = SwiftJSON(any) else { return nil }
+        guard let wrapper = SubscriptWrapper(any) else { return nil }
         
-        name = json["name"]
-        age = json["age"]
-        sex = json["sex"]
+        name = wrapper["name"]
+        age = wrapper["age"]
+        sex = wrapper["sex"]
     }
     
     public var json: Any {

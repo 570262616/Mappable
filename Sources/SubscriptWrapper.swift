@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SwiftJSON {
+public struct SubscriptWrapper {
     
     private let storage: [String: Any]
     
@@ -23,4 +23,3 @@ public struct SwiftJSON {
         return elements.flatMap { T.Element(any: $0) } as? T
     }
 }
-
