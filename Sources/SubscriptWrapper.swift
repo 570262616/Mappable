@@ -15,4 +15,9 @@ public struct SubscriptWrapper {
         
         return T(any: self.storage[key])
     }
+    
+    public subscript<T: Mappable>(_ key: String) -> [T]? {
+        
+        return [T](any: self.storage[key])
+    }
 }

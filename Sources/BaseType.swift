@@ -168,19 +168,14 @@ extension String: Mappable {
     public var json: Any { return self }
 }
 
-extension Array: Mappable {
+extension Array where Element: Mappable {
     
     public init?(any: Any?) {
         
-        guard
-            let elements = any as? [Any],
-            let MappableElementType = Element.self as? Mappable.Type else {
-                
-                return nil
-        }
+        guard let elements = any as? [Any] else { return nil }
         
-        self = elements.flatMap { MappableElementType.init(any: $0) as? Element }
+        self = elements.flatMap { Element(any: $0) }
     }
     
-    public var json: Any { return self.flatMap { ($0 as? Mappable)?.json } }
+    public var json: Any { return self.flatMap { $0.json } }
 }
