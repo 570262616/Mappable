@@ -1,4 +1,4 @@
-# SwiftJSONMapping
+# Mappable
 
 # Installation
     pod 'Mappable'
