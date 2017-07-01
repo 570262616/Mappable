@@ -1,6 +1,6 @@
 import Foundation
 
-extension Int8: Mappable {
+extension Int8: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -12,7 +12,7 @@ extension Int8: Mappable {
     public var json: Any { return self }
 }
 
-extension Int16: Mappable {
+extension Int16: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -24,7 +24,7 @@ extension Int16: Mappable {
     public var json: Any { return self }
 }
 
-extension Int32: Mappable {
+extension Int32: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -36,7 +36,7 @@ extension Int32: Mappable {
     public var json: Any { return self }
 }
 
-extension Int: Mappable {
+extension Int: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -48,7 +48,7 @@ extension Int: Mappable {
     public var json: Any { return self }
 }
 
-extension Int64: Mappable {
+extension Int64: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -60,7 +60,7 @@ extension Int64: Mappable {
     public var json: Any { return self }
 }
 
-extension UInt8: Mappable {
+extension UInt8: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -72,7 +72,7 @@ extension UInt8: Mappable {
     public var json: Any { return self }
 }
 
-extension UInt16: Mappable {
+extension UInt16: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -84,7 +84,7 @@ extension UInt16: Mappable {
     public var json: Any { return self }
 }
 
-extension UInt32: Mappable {
+extension UInt32: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -96,7 +96,7 @@ extension UInt32: Mappable {
     public var json: Any { return self }
 }
 
-extension UInt: Mappable {
+extension UInt: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -108,7 +108,7 @@ extension UInt: Mappable {
     public var json: Any { return self }
 }
 
-extension UInt64: Mappable {
+extension UInt64: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -120,7 +120,7 @@ extension UInt64: Mappable {
     public var json: Any { return self }
 }
 
-extension Float: Mappable {
+extension Float: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -132,7 +132,7 @@ extension Float: Mappable {
     public var json: Any { return self }
 }
 
-extension Double: Mappable {
+extension Double: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -144,7 +144,7 @@ extension Double: Mappable {
     public var json: Any { return self }
 }
 
-extension Bool: Mappable {
+extension Bool: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
@@ -156,7 +156,7 @@ extension Bool: Mappable {
     public var json: Any { return self }
 }
 
-extension String: Mappable {
+extension String: Mappable, DefaultValue {
     
     public init?(any: Any?) {
         
