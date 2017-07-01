@@ -12,6 +12,7 @@
 		291C3735FA2F98F6D480E25B639A0D42 /* Pods-Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF50723EE695E440CDA214119EF2C70 /* Pods-Sample-dummy.m */; };
 		3BE0597B024E8AA406AACCE872325373 /* Mappable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF02F98BD4D35A2B51DA7BEEF667F8 /* Mappable-dummy.m */; };
 		555EB99879F0B0230F6F79B648936729 /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF3AC228B6DE0AE0AE3A0E2218BFF4 /* BaseType.swift */; };
+		70B80BF31F072C4A00FC7CE5 /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B80BF21F072C4A00FC7CE5 /* DefaultValue.swift */; };
 		83587DFDCD06C4BCC87536710FC8A9E0 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70C4253876CE6DCE2D54CED0BB08E2 /* Mappable.swift */; };
 		95D067729680BAD4AE78968CE555257B /* SubscriptWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A8E1E9EF38FACE86931DA9B2DEC561 /* SubscriptWrapper.swift */; };
 		E992C7476ADFBBC3EE827C4F4DA90D70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -29,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B7F21954C12C0F4019A9FE17F99713 /* Mappable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Mappable.framework; path = Mappable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B7F21954C12C0F4019A9FE17F99713 /* Mappable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mappable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		161FD1626938094EEC6BF57530EDB6DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27A8E1E9EF38FACE86931DA9B2DEC561 /* SubscriptWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SubscriptWrapper.swift; sourceTree = "<group>"; };
 		2FDF78216A41DB691C5960FEE69EB9FD /* Pods-Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-resources.sh"; sourceTree = "<group>"; };
@@ -40,11 +41,12 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6A5C92702493824720C09F19056AFC95 /* Mappable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mappable.xcconfig; sourceTree = "<group>"; };
 		6D65DC53E876D33B73CCFEE44C379EE1 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
-		6DE07AC8AF7DCBF4CED59FE12E775AFD /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sample.framework; path = "Pods-Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		735E5204C40E887244F2B75BCCDF2572 /* Pods-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Sample.modulemap"; sourceTree = "<group>"; };
+		6DE07AC8AF7DCBF4CED59FE12E775AFD /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B80BF21F072C4A00FC7CE5 /* DefaultValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
+		735E5204C40E887244F2B75BCCDF2572 /* Pods-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Sample.modulemap"; sourceTree = "<group>"; };
 		78AF3AC228B6DE0AE0AE3A0E2218BFF4 /* BaseType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseType.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97C3FFEC9C288BB6773F4631DB6FA973 /* Mappable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Mappable.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97C3FFEC9C288BB6773F4631DB6FA973 /* Mappable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Mappable.modulemap; sourceTree = "<group>"; };
 		9C6BFC86BDA40AC6A3C287BFB857075D /* Mappable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mappable-umbrella.h"; sourceTree = "<group>"; };
 		9C896AB03AD02637A2108FF27D207683 /* Pods-Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-frameworks.sh"; sourceTree = "<group>"; };
 		A21D9B3C2775E7C503E601A5737980FB /* Pods-Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -93,9 +95,9 @@
 			children = (
 				78AF3AC228B6DE0AE0AE3A0E2218BFF4 /* BaseType.swift */,
 				DA70C4253876CE6DCE2D54CED0BB08E2 /* Mappable.swift */,
+				70B80BF21F072C4A00FC7CE5 /* DefaultValue.swift */,
 				27A8E1E9EF38FACE86931DA9B2DEC561 /* SubscriptWrapper.swift */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -270,6 +272,7 @@
 			files = (
 				555EB99879F0B0230F6F79B648936729 /* BaseType.swift in Sources */,
 				3BE0597B024E8AA406AACCE872325373 /* Mappable-dummy.m in Sources */,
+				70B80BF31F072C4A00FC7CE5 /* DefaultValue.swift in Sources */,
 				83587DFDCD06C4BCC87536710FC8A9E0 /* Mappable.swift in Sources */,
 				95D067729680BAD4AE78968CE555257B /* SubscriptWrapper.swift in Sources */,
 			);
