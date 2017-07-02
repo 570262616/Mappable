@@ -14,7 +14,7 @@
 		555EB99879F0B0230F6F79B648936729 /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF3AC228B6DE0AE0AE3A0E2218BFF4 /* BaseType.swift */; };
 		70B80BF31F072C4A00FC7CE5 /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B80BF21F072C4A00FC7CE5 /* DefaultValue.swift */; };
 		83587DFDCD06C4BCC87536710FC8A9E0 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70C4253876CE6DCE2D54CED0BB08E2 /* Mappable.swift */; };
-		95D067729680BAD4AE78968CE555257B /* SubscriptWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A8E1E9EF38FACE86931DA9B2DEC561 /* SubscriptWrapper.swift */; };
+		95D067729680BAD4AE78968CE555257B /* MapWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A8E1E9EF38FACE86931DA9B2DEC561 /* MapWrapper.swift */; };
 		E992C7476ADFBBC3EE827C4F4DA90D70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		EEDDE50A49EADB8383BD0E69035B1F39 /* Pods-Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 630DD76D417453483F37DBAE838D5518 /* Pods-Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		03B7F21954C12C0F4019A9FE17F99713 /* Mappable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mappable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		161FD1626938094EEC6BF57530EDB6DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27A8E1E9EF38FACE86931DA9B2DEC561 /* SubscriptWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SubscriptWrapper.swift; sourceTree = "<group>"; };
+		27A8E1E9EF38FACE86931DA9B2DEC561 /* MapWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapWrapper.swift; sourceTree = "<group>"; };
 		2FDF78216A41DB691C5960FEE69EB9FD /* Pods-Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-resources.sh"; sourceTree = "<group>"; };
 		3AE375A74D27FC41E7BB6C006DFC76A6 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF50723EE695E440CDA214119EF2C70 /* Pods-Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample-dummy.m"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				78AF3AC228B6DE0AE0AE3A0E2218BFF4 /* BaseType.swift */,
 				DA70C4253876CE6DCE2D54CED0BB08E2 /* Mappable.swift */,
 				70B80BF21F072C4A00FC7CE5 /* DefaultValue.swift */,
-				27A8E1E9EF38FACE86931DA9B2DEC561 /* SubscriptWrapper.swift */,
+				27A8E1E9EF38FACE86931DA9B2DEC561 /* MapWrapper.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 				3BE0597B024E8AA406AACCE872325373 /* Mappable-dummy.m in Sources */,
 				70B80BF31F072C4A00FC7CE5 /* DefaultValue.swift in Sources */,
 				83587DFDCD06C4BCC87536710FC8A9E0 /* Mappable.swift in Sources */,
-				95D067729680BAD4AE78968CE555257B /* SubscriptWrapper.swift in Sources */,
+				95D067729680BAD4AE78968CE555257B /* MapWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
