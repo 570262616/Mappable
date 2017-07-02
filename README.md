@@ -26,7 +26,7 @@ public struct TRPerson: Mappable {
 
     public init?(any: Any?) {
         
-        guard let wrapper = SubscriptWrapper(any) else { return nil }
+        guard let wrapper = MapWrapper(any) else { return nil }
         
         name = wrapper["name"]
         age = wrapper["age"]
@@ -34,14 +34,11 @@ public struct TRPerson: Mappable {
     }
     
     public var json: Any {
-        
-        var dict = [String: Any]()
-        
-        dict["name"] = name?.json
-        dict["age"] = age?.json
-        dict["sex"] = sex?.json
-
-        return dict
+        return MapWrapper.exportJSON {
+            $0["name"] = name
+            $0["age"] = age
+            $0["sex"] = sex
+        }
     }
 }
 ```
